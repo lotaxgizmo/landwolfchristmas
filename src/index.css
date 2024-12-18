@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Adigiana";
+  src: url("./assets/adigiana.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #4f5a7a;
+  background-image: url("./assets/snowww.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: repeat-y;
+  font-family: "Adigiana", sans-serif;
+}
+
+.rotatemoon {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gobackground {
+  background-image: url("./assets/santago.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.dashy {
+  border: 4px dashed white;
+  border-spacing: 20px;
+}
+
+.hello {
+  outline-style: dashed;
+  outline-width: 2px;
+  outline-color: white;
+  outline-offset: 3px;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .hello {
+    outline-width: 7px;
+    outline-offset: 5px;
+    border-radius: 60px;
+  }
+}
+
+.bgjoin {
+  background-image: url("./assets/bgjoin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
