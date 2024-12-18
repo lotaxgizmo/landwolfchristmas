@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import Snowfall from 'react-snowfall';
 
 import Home from './component/Home';
@@ -11,6 +11,13 @@ import Joinus from './component/Joinus';
 import moon from './assets/moon.png';
 import arcthing from './assets/arcthing.png';
 import Menu from './component/Menu';
+
+import bgmusic from './assets/audio.mp3';
+import enter from './assets/enter.png';
+import eyeglass from './assets/eyeglass.png'
+
+
+
 // import AmazingAudioPlayer from './AmazingAudioPlayer';
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,17 +35,57 @@ function App() {
     };
   }, []);
 
-  const tracks = [
-    {
-      title: "Song Title 1",
-      artist: "Artist 1",
-      album: "Album 1",
-      url: "./assets/money.mp3"
-    },
-  ];
+
+
+
+
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+
+  const handlePlayMusic = () => {
+    setIsPlaying(true);
+    // if (audioRef.current) {
+    //   audioRef.current.play();
+    // }
+  };
+
+  // const handleToggleMute = () => {
+  //   if (audioRef.current) {
+  //     if (isMuted) {
+  //       audioRef.current.muted = false;
+  //     } else {
+  //       audioRef.current.muted = true;
+  //     }
+  //     setIsMuted(!isMuted);
+  //   }
+  // };
+
 
   return (
     <div className="App relative flex flex-col items-center justify-center overflow-clip">
+
+
+      {!isPlaying && (
+        <div className="bg-black/60 backdrop-blur-xl fixed top-0 w-full h-screen flex flex-col justify-center items-center z-[100] ftop-10">
+          {/* <img src={logo} alt="" className='w-60' /> */}
+          <img
+            src={eyeglass}
+            alt="Enter"
+            className="w-96 p-3 z-[100] cursor-pointer rounded-full"
+            onClick={handlePlayMusic}
+          />
+          <p className="text-white text-2xl">Click to Enter</p>
+
+        </div>
+      )}
+      {/* <audio ref={audioRef} src={bgmusic} loop /> */}
+
+
+
+
+
+
 
       <div className="fixed w-full h-screen top-0">
         <Snowfall />
