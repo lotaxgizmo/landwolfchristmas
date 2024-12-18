@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react';
+import Snowfall from 'react-snowfall';
+
 import Home from './component/Home';
 import List from './component/List';
 import About from './component/About';
@@ -8,7 +11,6 @@ import Joinus from './component/Joinus';
 import moon from './assets/moon.png';
 import arcthing from './assets/arcthing.png';
 import Menu from './component/Menu';
-import { useEffect, useState } from 'react';
 // import AmazingAudioPlayer from './AmazingAudioPlayer';
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -38,9 +40,13 @@ function App() {
   return (
     <div className="App relative flex flex-col items-center justify-center overflow-clip">
 
-      {/* <AmazingAudioPlayer /> */}
+      <div className="fixed w-full h-screen top-0">
+        <Snowfall />
+      </div>
+
+
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
-      <div class="elfsight-app-ac3eefb0-c7fa-422d-977d-62a44e0fec69" data-elfsight-app-lazy></div>
+      <div className="elfsight-app-ac3eefb0-c7fa-422d-977d-62a44e0fec69 z-[90]" data-elfsight-app-lazy></div>
       <Menu />
       <Home />
       <List />
@@ -55,12 +61,13 @@ function App() {
         style={{
           transform: `translateY(-${scrollPosition * 0.15}px)`
         }}>
+
         <img
           src={moon}
           alt="moon"
           className=" w-[70%]  rotatemoon "
-
         />
+
       </div>
       <img src={arcthing} alt="arcthing" className="fixed w-[100%] lg:-bottom-[180%] -bottom-[12%] -z-[2]" />
     </div>
