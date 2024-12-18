@@ -14,7 +14,7 @@ import Menu from './component/Menu';
 
 import bgmusic from './assets/audio.mp3';
 import enter from './assets/enter.png';
-import eyeglass from './assets/eyeglass.png'
+import eyeglass from './assets/eyeglass.gif'
 
 
 
