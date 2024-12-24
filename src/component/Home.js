@@ -25,7 +25,8 @@ function Home() {
             <img src={herotext} alt="herotext" className='w-[95%] mt-5 lg:mt-0' />
             <img src={onpump} alt="onpump" className='lg:w-96 w-40 lg:-mt-32 -mt-6 lg:mb-0 mb-2 shakety' />
 
-            <h1 className='text-[#F7FFFF] text-3xl lg:-rotate-6 text-center z-10'>A New Beginning for the Community</h1>
+            <h1 className='text-[#F7FFFF] lg:text-3xl lg:-rotate-6 text-center z-10'>A New Beginning for the Community</h1>
+            <h2 className='text-[#F7FFFF] lg:text-3xl text-sm lg:-rotate-6 text-center z-10'>66iuRVBNrm1ww2v3xPGqoCzkqYs7Wc2rPYfCPK8xpump</h2>
 
             <img
                 src={reindeer}
