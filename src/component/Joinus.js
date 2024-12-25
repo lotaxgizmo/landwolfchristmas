@@ -34,8 +34,8 @@ function Joinus() {
 
                 <p className='lg:text-xl text-sm text-center lg:w-7/12'>Disclaimer: 🎄🐺
                     <br />
-                    LandWolf on Pump.fun is a cryptocurrency project with exciting potential, but remember—crypto investing comes with risks! Prices can be as unpredictable as holiday weather. Please do your research and invest responsibly. Let’s keep the Christmas spirit bright and your wallet safe this season. This is not financial advice—just a friendly nudge to stay merry and mindful! 🎅✨</p>
-                <p className='lg:text-xl text-sm text-center '>2024 $LANDWOLF ALL RIGHTS RESERVED</p>
+                    SantaWolf on Pump.fun is a cryptocurrency project with exciting potential, but remember—crypto investing comes with risks! Prices can be as unpredictable as holiday weather. Please do your research and invest responsibly. Let’s keep the Christmas spirit bright and your wallet safe this season. This is not financial advice—just a friendly nudge to stay merry and mindful! 🎅✨</p>
+                <p className='lg:text-xl text-sm text-center '>2024 $SANTAWOLF ALL RIGHTS RESERVED</p>
             </div>
         </div>
     )
