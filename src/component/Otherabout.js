@@ -10,7 +10,7 @@ function Otherabout() {
 
             <div className="hello flex flex-col justify-center items-center lg:absolute lg:bottom-20 bottom-5 bg-black/40 lg:gap-5 lg:w-9/12 w-11/12 lg:p-20 p-3 backdrop-blur-lg">
 
-                <p className='text-[#F7FFFF] lg:text-4xl text-base  text-center  '>This project is built on trust, transparency, and long-term goals. A team of talented artists and marketers is driving LandWolf forward, ensuring it surpasses expectations and delivers genuine value to the community. Launching with a festive holiday theme, LandWolf will transition to its permanent home on Pump.fun, offering stability and renewed hope.</p>
+                <p className='text-[#F7FFFF] lg:text-4xl text-base  text-center  '>This project is built on trust, transparency, and long-term goals. A team of talented artists and marketers is driving SantaWolf forward, ensuring it surpasses expectations and delivers genuine value to the community. Launching with a festive holiday theme, SantaWolf will transition to its permanent home on Pump.fun, offering stability and renewed hope.</p>
 
                 <img
                     src={ca}
